@@ -1,0 +1,188 @@
+/* font-family: 'Anton', sans-serif; */
+/* font-family: 'Asap', sans-serif; 
+font-family: 'Yesteryear', cursive;*/
+
+/* #505668;
+#f1ece1;
+tomato */
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Asap', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #505668;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+header a {
+    color: #fff;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 36px;
+    font-family: 'Anton', sans-serif;
+}
+#menu li{
+    padding: 10px;
+}
+#social-link li{
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+}
+aside{
+    padding: 10px;
+    flex: 0 0 20vw;
+    background: tomato;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside ul a{
+    color: #505668;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #505668;
+}
+aside ul a:hover{
+    background-color: #505668;
+    color: #fff;
+}
+aside img {
+    width: 100%;
+}
+article{
+    padding: 10px;
+}
+article p{
+    text-align: justify;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services-box{
+    border: 1px solid #505668;
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.services-box h3{
+    margin: 5px 0 10px;
+}
+.services-box p{
+    margin: 0 0 30px 0;
+    font-size: small;
+}
+.services-box img{
+    width: 100%;
+}
+.call-to-action {
+    margin-top: auto;
+    align-self: flex-start;
+}
+.call-to-action a{
+    background-color: #505668;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 8px 13px;
+    display: block;
+}
+.call-to-action a:hover{
+    background-color: transparent;
+    border: 2px solid #505668;
+    color: tomato;
+    border-radius: 20px;
+}
+footer{
+    background-color: hsl(225, 13%, 36%);
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+span a{
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Yesteryear', cursive;
+}
+
+
+@media screen and (max-width:850px) {
+    .services-box{
+        flex-basis: 48%;
+    }
+    aside{
+        flex:0 0 30vw;
+    }
+    article p{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 600px){
+     header{
+         flex-direction: column;
+     }
+    
+     #logo {
+         order: -1;
+         font-size: 48px;
+         letter-spacing: .3em;
+     }
+     #main{
+         flex-direction: column;
+     }
+     aside ul{
+         text-align: center;
+     }
+     article{
+         order: -1;
+     }
+
+     .services-container{
+         flex-direction: column;
+         align-items: center;
+     }
+     h2{
+         text-align: center;
+     }
+
+     article p{
+         text-align: justify;
+     }
+}
+
+
+
+
+
+
+
+
+
+
